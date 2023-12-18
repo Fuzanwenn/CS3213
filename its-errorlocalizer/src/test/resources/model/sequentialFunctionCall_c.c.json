@@ -1,0 +1,336 @@
+{
+  "importStatements": [
+    "#include <stdio.h>"
+  ],
+  "fncs": {
+    "echoEchoEcho": {
+      "name": "echoEchoEcho",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "$ret",
+            "val1": {
+              "value": "3",
+              "line": 21,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "value": "3",
+                "line": 21
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "value": "3",
+                "line": 21
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'echoEchoEcho'"
+      },
+      "types": {}
+    },
+    "echo": {
+      "name": "echo",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "$ret",
+            "val1": {
+              "name": "FuncCall",
+              "args": [
+                {
+                  "name": "echoEcho",
+                  "primed": false,
+                  "line": 13,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 13,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "name": "FuncCall",
+                "args": [
+                  {
+                    "name": "echoEcho",
+                    "primed": false,
+                    "line": 13,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 13
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "name": "FuncCall",
+                "args": [
+                  {
+                    "name": "echoEcho",
+                    "primed": false,
+                    "line": 13,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 13
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'echo'"
+      },
+      "types": {}
+    },
+    "main": {
+      "name": "main",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "$out",
+            "val1": {
+              "name": "StrAppend",
+              "args": [
+                {
+                  "name": "$out",
+                  "primed": false,
+                  "line": 0,
+                  "tokentype": "Variable"
+                },
+                {
+                  "name": "StrFormat",
+                  "args": [
+                    {
+                      "value": "\"%d\"",
+                      "line": 8,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "name": "FuncCall",
+                      "args": [
+                        {
+                          "name": "echoEcho",
+                          "primed": false,
+                          "line": 8,
+                          "tokentype": "Variable"
+                        }
+                      ],
+                      "line": 8,
+                      "tokentype": "Operation"
+                    }
+                  ],
+                  "line": 8,
+                  "tokentype": "Operation"
+                }
+              ],
+              "line": 8,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 0,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"%d\"",
+                        "line": 8,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "FuncCall",
+                        "args": [
+                          {
+                            "name": "echoEcho",
+                            "primed": false,
+                            "line": 8,
+                            "tokentype": "Variable"
+                          }
+                        ],
+                        "line": 8,
+                        "tokentype": "Operation"
+                      }
+                    ],
+                    "line": 8,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 8
+              }
+            ],
+            "valueList": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 0,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"%d\"",
+                        "line": 8,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "FuncCall",
+                        "args": [
+                          {
+                            "name": "echoEcho",
+                            "primed": false,
+                            "line": 8,
+                            "tokentype": "Variable"
+                          }
+                        ],
+                        "line": 8,
+                        "tokentype": "Operation"
+                      }
+                    ],
+                    "line": 8,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 8
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "value": "0",
+              "line": 9,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 9
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 9
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'main'"
+      },
+      "types": {}
+    },
+    "echoEcho": {
+      "name": "echoEcho",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "$ret",
+            "val1": {
+              "name": "FuncCall",
+              "args": [
+                {
+                  "name": "echoEchoEcho",
+                  "primed": false,
+                  "line": 17,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 17,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "name": "FuncCall",
+                "args": [
+                  {
+                    "name": "echoEchoEcho",
+                    "primed": false,
+                    "line": 17,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 17
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "name": "FuncCall",
+                "args": [
+                  {
+                    "name": "echoEchoEcho",
+                    "primed": false,
+                    "line": 17,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'echoEcho'"
+      },
+      "types": {}
+    }
+  }
+}

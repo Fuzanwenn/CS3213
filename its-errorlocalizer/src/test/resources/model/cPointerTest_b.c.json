@@ -1,0 +1,197 @@
+{
+  "importStatements": [
+    "#include <stdio.h>"
+  ],
+  "fncs": {
+    "main": {
+      "name": "main",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "var_runoob",
+            "val1": {
+              "value": "10",
+              "line": 4,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "var_runoob",
+              {
+                "value": "10",
+                "line": 4
+              }
+            ],
+            "valueList": [
+              "var_runoob",
+              {
+                "value": "10",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "val0": "p",
+            "val1": {
+              "name": "var_runoob",
+              "primed": true,
+              "line": 4,
+              "tokentype": "Variable"
+            },
+            "valueArray": [
+              "p",
+              {
+                "name": "var_runoob",
+                "primed": true,
+                "line": 4
+              }
+            ],
+            "valueList": [
+              "p",
+              {
+                "name": "var_runoob",
+                "primed": true,
+                "line": 4
+              }
+            ]
+          },
+          {
+            "val0": "$out",
+            "val1": {
+              "name": "StrAppend",
+              "args": [
+                {
+                  "name": "$out",
+                  "primed": false,
+                  "line": 0,
+                  "tokentype": "Variable"
+                },
+                {
+                  "name": "StrFormat",
+                  "args": [
+                    {
+                      "value": "\"var_runoob： %p\\n\"",
+                      "line": 7,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "name": "p",
+                      "primed": true,
+                      "line": 5,
+                      "tokentype": "Variable"
+                    }
+                  ],
+                  "line": 7,
+                  "tokentype": "Operation"
+                }
+              ],
+              "line": 7,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 0,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"var_runoob： %p\\n\"",
+                        "line": 7,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "p",
+                        "primed": true,
+                        "line": 5,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 7,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 7
+              }
+            ],
+            "valueList": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 0,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"var_runoob： %p\\n\"",
+                        "line": 7,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "p",
+                        "primed": true,
+                        "line": 5,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 7,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 7
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "value": "0",
+              "line": 8,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 8
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 8
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'main'"
+      },
+      "types": {
+        "p": "int*",
+        "var_runoob": "int"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sg.edu.nus.se.its</groupId>
+  <artifactId>its-all</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.1</version>
+
+  <modules>
+    <module>its-core</module>
+    <module>its-errorlocalizer</module>
+    <module>its-integration-services</module>
+  </modules>
+
+  <properties>
+    <project.java.version>11</project.java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+</project>

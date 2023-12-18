@@ -1,0 +1,701 @@
+{
+  "importStatements": [
+    "#include\u003cstdio.h\u003e"
+  ],
+  "fncs": {
+    "main": {
+      "name": "main",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "c",
+            "val1": {
+              "value": "0",
+              "line": 4,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "c",
+              {
+                "value": "0",
+                "line": 4
+              }
+            ],
+            "valueList": [
+              "c",
+              {
+                "value": "0",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "val0": "a",
+            "val1": {
+              "name": "ListHead",
+              "args": [
+                {
+                  "value": "int",
+                  "line": 5,
+                  "tokentype": "Constant"
+                },
+                {
+                  "name": "$in",
+                  "primed": false,
+                  "line": 5,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 5,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "a",
+              {
+                "name": "ListHead",
+                "args": [
+                  {
+                    "value": "int",
+                    "line": 5,
+                    "tokentype": "Constant"
+                  },
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 5
+              }
+            ],
+            "valueList": [
+              "a",
+              {
+                "name": "ListHead",
+                "args": [
+                  {
+                    "value": "int",
+                    "line": 5,
+                    "tokentype": "Constant"
+                  },
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 5
+              }
+            ]
+          },
+          {
+            "val0": "$in",
+            "val1": {
+              "name": "ListTail",
+              "args": [
+                {
+                  "name": "$in",
+                  "primed": false,
+                  "line": 5,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 5,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$in",
+              {
+                "name": "ListTail",
+                "args": [
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 5
+              }
+            ],
+            "valueList": [
+              "$in",
+              {
+                "name": "ListTail",
+                "args": [
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 5
+              }
+            ]
+          },
+          {
+            "val0": "$out",
+            "val1": {
+              "name": "StrAppend",
+              "args": [
+                {
+                  "name": "$out",
+                  "primed": false,
+                  "line": 10,
+                  "tokentype": "Variable"
+                },
+                {
+                  "name": "StrFormat",
+                  "args": [
+                    {
+                      "value": "\"%d \"",
+                      "line": 6,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "name": "a",
+                      "primed": true,
+                      "line": 6,
+                      "tokentype": "Variable"
+                    }
+                  ],
+                  "line": 6,
+                  "tokentype": "Operation"
+                }
+              ],
+              "line": 6,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 10,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"%d \"",
+                        "line": 6,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "a",
+                        "primed": true,
+                        "line": 6,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 6,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 6
+              }
+            ],
+            "valueList": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 10,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"%d \"",
+                        "line": 6,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "a",
+                        "primed": true,
+                        "line": 6,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 6,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 6
+              }
+            ]
+          }
+        ],
+        "2": [
+          {
+            "val0": "$cond",
+            "val1": {
+              "name": "\u003e",
+              "args": [
+                {
+                  "name": "a",
+                  "primed": false,
+                  "line": 6,
+                  "tokentype": "Variable"
+                },
+                {
+                  "value": "0",
+                  "line": 7,
+                  "tokentype": "Constant"
+                }
+              ],
+              "line": 7,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$cond",
+              {
+                "name": "\u003e",
+                "args": [
+                  {
+                    "name": "a",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "0",
+                    "line": 7,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 7
+              }
+            ],
+            "valueList": [
+              "$cond",
+              {
+                "name": "\u003e",
+                "args": [
+                  {
+                    "name": "a",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "0",
+                    "line": 7,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 7
+              }
+            ]
+          }
+        ],
+        "3": [
+          {
+            "val0": "$out",
+            "val1": {
+              "name": "StrAppend",
+              "args": [
+                {
+                  "name": "$out",
+                  "primed": false,
+                  "line": 10,
+                  "tokentype": "Variable"
+                },
+                {
+                  "name": "StrFormat",
+                  "args": [
+                    {
+                      "value": "\"Reverse of %d is %d\"",
+                      "line": 12,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "name": "e",
+                      "primed": false,
+                      "line": 4,
+                      "tokentype": "Variable"
+                    },
+                    {
+                      "name": "c",
+                      "primed": false,
+                      "line": 4,
+                      "tokentype": "Variable"
+                    }
+                  ],
+                  "line": 12,
+                  "tokentype": "Operation"
+                }
+              ],
+              "line": 12,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 10,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"Reverse of %d is %d\"",
+                        "line": 12,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "e",
+                        "primed": false,
+                        "line": 4,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "name": "c",
+                        "primed": false,
+                        "line": 4,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 12,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 12
+              }
+            ],
+            "valueList": [
+              "$out",
+              {
+                "name": "StrAppend",
+                "args": [
+                  {
+                    "name": "$out",
+                    "primed": false,
+                    "line": 10,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "StrFormat",
+                    "args": [
+                      {
+                        "value": "\"Reverse of %d is %d\"",
+                        "line": 12,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "name": "e",
+                        "primed": false,
+                        "line": 4,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "name": "c",
+                        "primed": false,
+                        "line": 4,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 12,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 12
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "value": "0",
+              "line": 13,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 13
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 13
+              }
+            ]
+          }
+        ],
+        "4": [
+          {
+            "val0": "b",
+            "val1": {
+              "name": "%",
+              "args": [
+                {
+                  "name": "a",
+                  "primed": false,
+                  "line": 6,
+                  "tokentype": "Variable"
+                },
+                {
+                  "value": "10",
+                  "line": 8,
+                  "tokentype": "Constant"
+                }
+              ],
+              "line": 8,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "b",
+              {
+                "name": "%",
+                "args": [
+                  {
+                    "name": "a",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "10",
+                    "line": 8,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 8
+              }
+            ],
+            "valueList": [
+              "b",
+              {
+                "name": "%",
+                "args": [
+                  {
+                    "name": "a",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "10",
+                    "line": 8,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 8
+              }
+            ]
+          },
+          {
+            "val0": "c",
+            "val1": {
+              "name": "+",
+              "args": [
+                {
+                  "name": "*",
+                  "args": [
+                    {
+                      "name": "c",
+                      "primed": false,
+                      "line": 4,
+                      "tokentype": "Variable"
+                    },
+                    {
+                      "value": "10",
+                      "line": 9,
+                      "tokentype": "Constant"
+                    }
+                  ],
+                  "line": 9,
+                  "tokentype": "Operation"
+                },
+                {
+                  "name": "b",
+                  "primed": true,
+                  "line": 6,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 9,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "c",
+              {
+                "name": "+",
+                "args": [
+                  {
+                    "name": "*",
+                    "args": [
+                      {
+                        "name": "c",
+                        "primed": false,
+                        "line": 4,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "value": "10",
+                        "line": 9,
+                        "tokentype": "Constant"
+                      }
+                    ],
+                    "line": 9,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "name": "b",
+                    "primed": true,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 9
+              }
+            ],
+            "valueList": [
+              "c",
+              {
+                "name": "+",
+                "args": [
+                  {
+                    "name": "*",
+                    "args": [
+                      {
+                        "name": "c",
+                        "primed": false,
+                        "line": 4,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "value": "10",
+                        "line": 9,
+                        "tokentype": "Constant"
+                      }
+                    ],
+                    "line": 9,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "name": "b",
+                    "primed": true,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 9
+              }
+            ]
+          },
+          {
+            "val0": "a",
+            "val1": {
+              "name": "/",
+              "args": [
+                {
+                  "name": "a",
+                  "primed": false,
+                  "line": 6,
+                  "tokentype": "Variable"
+                },
+                {
+                  "value": "10",
+                  "line": 10,
+                  "tokentype": "Constant"
+                }
+              ],
+              "line": 10,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "a",
+              {
+                "name": "/",
+                "args": [
+                  {
+                    "name": "a",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "10",
+                    "line": 10,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 10
+              }
+            ],
+            "valueList": [
+              "a",
+              {
+                "name": "/",
+                "args": [
+                  {
+                    "name": "a",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "10",
+                    "line": 10,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 10
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {
+          "true": 2
+        },
+        "2": {
+          "false": 3,
+          "true": 4
+        },
+        "3": {},
+        "4": {
+          "true": 2
+        }
+      },
+      "locdescs": {
+        "1": "at the beginning of the function \u0027main\u0027",
+        "2": "the condition of the \u0027while\u0027 loop at line 7",
+        "3": "*after* the \u0027while\u0027 loop starting at line 7",
+        "4": "inside the body of the \u0027while\u0027 loop beginning at line 7"
+      },
+      "types": {
+        "a": "int",
+        "b": "int",
+        "c": "int",
+        "e": "int"
+      }
+    }
+  }
+}

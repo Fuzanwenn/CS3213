@@ -1,0 +1,796 @@
+{
+  "importStatements": [
+    "#include\u003cstdio.h\u003e"
+  ],
+  "fncs": {
+    "main": {
+      "name": "main",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "y",
+            "val1": {
+              "name": "ListHead",
+              "args": [
+                {
+                  "value": "int",
+                  "line": 6,
+                  "tokentype": "Constant"
+                },
+                {
+                  "name": "$in",
+                  "primed": false,
+                  "line": 6,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 6,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "y",
+              {
+                "name": "ListHead",
+                "args": [
+                  {
+                    "value": "int",
+                    "line": 6,
+                    "tokentype": "Constant"
+                  },
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 6
+              }
+            ],
+            "valueList": [
+              "y",
+              {
+                "name": "ListHead",
+                "args": [
+                  {
+                    "value": "int",
+                    "line": 6,
+                    "tokentype": "Constant"
+                  },
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 6
+              }
+            ]
+          },
+          {
+            "val0": "$in",
+            "val1": {
+              "name": "ListTail",
+              "args": [
+                {
+                  "name": "$in",
+                  "primed": false,
+                  "line": 6,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 6,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$in",
+              {
+                "name": "ListTail",
+                "args": [
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 6
+              }
+            ],
+            "valueList": [
+              "$in",
+              {
+                "name": "ListTail",
+                "args": [
+                  {
+                    "name": "$in",
+                    "primed": false,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 6
+              }
+            ]
+          },
+          {
+            "val0": "$out",
+            "val1": {
+              "name": "ite",
+              "args": [
+                {
+                  "name": "\u003d\u003d",
+                  "args": [
+                    {
+                      "name": "%",
+                      "args": [
+                        {
+                          "name": "y",
+                          "primed": true,
+                          "line": 5,
+                          "tokentype": "Variable"
+                        },
+                        {
+                          "value": "4",
+                          "line": 7,
+                          "tokentype": "Constant"
+                        }
+                      ],
+                      "line": 7,
+                      "tokentype": "Operation"
+                    },
+                    {
+                      "value": "0",
+                      "line": 7,
+                      "tokentype": "Constant"
+                    }
+                  ],
+                  "line": 7,
+                  "tokentype": "Operation"
+                },
+                {
+                  "name": "ite",
+                  "args": [
+                    {
+                      "name": "\u003d\u003d",
+                      "args": [
+                        {
+                          "name": "%",
+                          "args": [
+                            {
+                              "name": "y",
+                              "primed": true,
+                              "line": 5,
+                              "tokentype": "Variable"
+                            },
+                            {
+                              "value": "100",
+                              "line": 9,
+                              "tokentype": "Constant"
+                            }
+                          ],
+                          "line": 9,
+                          "tokentype": "Operation"
+                        },
+                        {
+                          "value": "0",
+                          "line": 9,
+                          "tokentype": "Constant"
+                        }
+                      ],
+                      "line": 9,
+                      "tokentype": "Operation"
+                    },
+                    {
+                      "name": "ite",
+                      "args": [
+                        {
+                          "name": "\u003d\u003d",
+                          "args": [
+                            {
+                              "name": "%",
+                              "args": [
+                                {
+                                  "name": "y",
+                                  "primed": true,
+                                  "line": 5,
+                                  "tokentype": "Variable"
+                                },
+                                {
+                                  "value": "400",
+                                  "line": 11,
+                                  "tokentype": "Constant"
+                                }
+                              ],
+                              "line": 11,
+                              "tokentype": "Operation"
+                            },
+                            {
+                              "value": "0",
+                              "line": 11,
+                              "tokentype": "Constant"
+                            }
+                          ],
+                          "line": 11,
+                          "tokentype": "Operation"
+                        },
+                        {
+                          "name": "StrAppend",
+                          "args": [
+                            {
+                              "name": "$out",
+                              "primed": false,
+                              "line": 13,
+                              "tokentype": "Variable"
+                            },
+                            {
+                              "name": "StrFormat",
+                              "args": [
+                                {
+                                  "value": "\"Leap Year\"",
+                                  "line": 12,
+                                  "tokentype": "Constant"
+                                }
+                              ],
+                              "line": 12,
+                              "tokentype": "Operation"
+                            }
+                          ],
+                          "line": 12,
+                          "tokentype": "Operation"
+                        },
+                        {
+                          "name": "StrAppend",
+                          "args": [
+                            {
+                              "name": "$out",
+                              "primed": false,
+                              "line": 13,
+                              "tokentype": "Variable"
+                            },
+                            {
+                              "name": "StrFormat",
+                              "args": [
+                                {
+                                  "value": "\"Not Leap Year\"",
+                                  "line": 14,
+                                  "tokentype": "Constant"
+                                }
+                              ],
+                              "line": 14,
+                              "tokentype": "Operation"
+                            }
+                          ],
+                          "line": 14,
+                          "tokentype": "Operation"
+                        }
+                      ],
+                      "line": 11,
+                      "tokentype": "Operation"
+                    },
+                    {
+                      "name": "StrAppend",
+                      "args": [
+                        {
+                          "name": "$out",
+                          "primed": false,
+                          "line": 13,
+                          "tokentype": "Variable"
+                        },
+                        {
+                          "name": "StrFormat",
+                          "args": [
+                            {
+                              "value": "\"Leap Year\"",
+                              "line": 17,
+                              "tokentype": "Constant"
+                            }
+                          ],
+                          "line": 17,
+                          "tokentype": "Operation"
+                        }
+                      ],
+                      "line": 17,
+                      "tokentype": "Operation"
+                    }
+                  ],
+                  "line": 9,
+                  "tokentype": "Operation"
+                },
+                {
+                  "name": "StrAppend",
+                  "args": [
+                    {
+                      "name": "$out",
+                      "primed": false,
+                      "line": 13,
+                      "tokentype": "Variable"
+                    },
+                    {
+                      "name": "StrFormat",
+                      "args": [
+                        {
+                          "value": "\"Not Leap Year\"",
+                          "line": 20,
+                          "tokentype": "Constant"
+                        }
+                      ],
+                      "line": 20,
+                      "tokentype": "Operation"
+                    }
+                  ],
+                  "line": 20,
+                  "tokentype": "Operation"
+                }
+              ],
+              "line": 7,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$out",
+              {
+                "name": "ite",
+                "args": [
+                  {
+                    "name": "\u003d\u003d",
+                    "args": [
+                      {
+                        "name": "%",
+                        "args": [
+                          {
+                            "name": "y",
+                            "primed": true,
+                            "line": 5,
+                            "tokentype": "Variable"
+                          },
+                          {
+                            "value": "4",
+                            "line": 7,
+                            "tokentype": "Constant"
+                          }
+                        ],
+                        "line": 7,
+                        "tokentype": "Operation"
+                      },
+                      {
+                        "value": "0",
+                        "line": 7,
+                        "tokentype": "Constant"
+                      }
+                    ],
+                    "line": 7,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "name": "ite",
+                    "args": [
+                      {
+                        "name": "\u003d\u003d",
+                        "args": [
+                          {
+                            "name": "%",
+                            "args": [
+                              {
+                                "name": "y",
+                                "primed": true,
+                                "line": 5,
+                                "tokentype": "Variable"
+                              },
+                              {
+                                "value": "100",
+                                "line": 9,
+                                "tokentype": "Constant"
+                              }
+                            ],
+                            "line": 9,
+                            "tokentype": "Operation"
+                          },
+                          {
+                            "value": "0",
+                            "line": 9,
+                            "tokentype": "Constant"
+                          }
+                        ],
+                        "line": 9,
+                        "tokentype": "Operation"
+                      },
+                      {
+                        "name": "ite",
+                        "args": [
+                          {
+                            "name": "\u003d\u003d",
+                            "args": [
+                              {
+                                "name": "%",
+                                "args": [
+                                  {
+                                    "name": "y",
+                                    "primed": true,
+                                    "line": 5,
+                                    "tokentype": "Variable"
+                                  },
+                                  {
+                                    "value": "400",
+                                    "line": 11,
+                                    "tokentype": "Constant"
+                                  }
+                                ],
+                                "line": 11,
+                                "tokentype": "Operation"
+                              },
+                              {
+                                "value": "0",
+                                "line": 11,
+                                "tokentype": "Constant"
+                              }
+                            ],
+                            "line": 11,
+                            "tokentype": "Operation"
+                          },
+                          {
+                            "name": "StrAppend",
+                            "args": [
+                              {
+                                "name": "$out",
+                                "primed": false,
+                                "line": 13,
+                                "tokentype": "Variable"
+                              },
+                              {
+                                "name": "StrFormat",
+                                "args": [
+                                  {
+                                    "value": "\"Leap Year\"",
+                                    "line": 12,
+                                    "tokentype": "Constant"
+                                  }
+                                ],
+                                "line": 12,
+                                "tokentype": "Operation"
+                              }
+                            ],
+                            "line": 12,
+                            "tokentype": "Operation"
+                          },
+                          {
+                            "name": "StrAppend",
+                            "args": [
+                              {
+                                "name": "$out",
+                                "primed": false,
+                                "line": 13,
+                                "tokentype": "Variable"
+                              },
+                              {
+                                "name": "StrFormat",
+                                "args": [
+                                  {
+                                    "value": "\"Not Leap Year\"",
+                                    "line": 14,
+                                    "tokentype": "Constant"
+                                  }
+                                ],
+                                "line": 14,
+                                "tokentype": "Operation"
+                              }
+                            ],
+                            "line": 14,
+                            "tokentype": "Operation"
+                          }
+                        ],
+                        "line": 11,
+                        "tokentype": "Operation"
+                      },
+                      {
+                        "name": "StrAppend",
+                        "args": [
+                          {
+                            "name": "$out",
+                            "primed": false,
+                            "line": 13,
+                            "tokentype": "Variable"
+                          },
+                          {
+                            "name": "StrFormat",
+                            "args": [
+                              {
+                                "value": "\"Leap Year\"",
+                                "line": 17,
+                                "tokentype": "Constant"
+                              }
+                            ],
+                            "line": 17,
+                            "tokentype": "Operation"
+                          }
+                        ],
+                        "line": 17,
+                        "tokentype": "Operation"
+                      }
+                    ],
+                    "line": 9,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "name": "StrAppend",
+                    "args": [
+                      {
+                        "name": "$out",
+                        "primed": false,
+                        "line": 13,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "name": "StrFormat",
+                        "args": [
+                          {
+                            "value": "\"Not Leap Year\"",
+                            "line": 20,
+                            "tokentype": "Constant"
+                          }
+                        ],
+                        "line": 20,
+                        "tokentype": "Operation"
+                      }
+                    ],
+                    "line": 20,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 7
+              }
+            ],
+            "valueList": [
+              "$out",
+              {
+                "name": "ite",
+                "args": [
+                  {
+                    "name": "\u003d\u003d",
+                    "args": [
+                      {
+                        "name": "%",
+                        "args": [
+                          {
+                            "name": "y",
+                            "primed": true,
+                            "line": 5,
+                            "tokentype": "Variable"
+                          },
+                          {
+                            "value": "4",
+                            "line": 7,
+                            "tokentype": "Constant"
+                          }
+                        ],
+                        "line": 7,
+                        "tokentype": "Operation"
+                      },
+                      {
+                        "value": "0",
+                        "line": 7,
+                        "tokentype": "Constant"
+                      }
+                    ],
+                    "line": 7,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "name": "ite",
+                    "args": [
+                      {
+                        "name": "\u003d\u003d",
+                        "args": [
+                          {
+                            "name": "%",
+                            "args": [
+                              {
+                                "name": "y",
+                                "primed": true,
+                                "line": 5,
+                                "tokentype": "Variable"
+                              },
+                              {
+                                "value": "100",
+                                "line": 9,
+                                "tokentype": "Constant"
+                              }
+                            ],
+                            "line": 9,
+                            "tokentype": "Operation"
+                          },
+                          {
+                            "value": "0",
+                            "line": 9,
+                            "tokentype": "Constant"
+                          }
+                        ],
+                        "line": 9,
+                        "tokentype": "Operation"
+                      },
+                      {
+                        "name": "ite",
+                        "args": [
+                          {
+                            "name": "\u003d\u003d",
+                            "args": [
+                              {
+                                "name": "%",
+                                "args": [
+                                  {
+                                    "name": "y",
+                                    "primed": true,
+                                    "line": 5,
+                                    "tokentype": "Variable"
+                                  },
+                                  {
+                                    "value": "400",
+                                    "line": 11,
+                                    "tokentype": "Constant"
+                                  }
+                                ],
+                                "line": 11,
+                                "tokentype": "Operation"
+                              },
+                              {
+                                "value": "0",
+                                "line": 11,
+                                "tokentype": "Constant"
+                              }
+                            ],
+                            "line": 11,
+                            "tokentype": "Operation"
+                          },
+                          {
+                            "name": "StrAppend",
+                            "args": [
+                              {
+                                "name": "$out",
+                                "primed": false,
+                                "line": 13,
+                                "tokentype": "Variable"
+                              },
+                              {
+                                "name": "StrFormat",
+                                "args": [
+                                  {
+                                    "value": "\"Leap Year\"",
+                                    "line": 12,
+                                    "tokentype": "Constant"
+                                  }
+                                ],
+                                "line": 12,
+                                "tokentype": "Operation"
+                              }
+                            ],
+                            "line": 12,
+                            "tokentype": "Operation"
+                          },
+                          {
+                            "name": "StrAppend",
+                            "args": [
+                              {
+                                "name": "$out",
+                                "primed": false,
+                                "line": 13,
+                                "tokentype": "Variable"
+                              },
+                              {
+                                "name": "StrFormat",
+                                "args": [
+                                  {
+                                    "value": "\"Not Leap Year\"",
+                                    "line": 14,
+                                    "tokentype": "Constant"
+                                  }
+                                ],
+                                "line": 14,
+                                "tokentype": "Operation"
+                              }
+                            ],
+                            "line": 14,
+                            "tokentype": "Operation"
+                          }
+                        ],
+                        "line": 11,
+                        "tokentype": "Operation"
+                      },
+                      {
+                        "name": "StrAppend",
+                        "args": [
+                          {
+                            "name": "$out",
+                            "primed": false,
+                            "line": 13,
+                            "tokentype": "Variable"
+                          },
+                          {
+                            "name": "StrFormat",
+                            "args": [
+                              {
+                                "value": "\"Leap Year\"",
+                                "line": 17,
+                                "tokentype": "Constant"
+                              }
+                            ],
+                            "line": 17,
+                            "tokentype": "Operation"
+                          }
+                        ],
+                        "line": 17,
+                        "tokentype": "Operation"
+                      }
+                    ],
+                    "line": 9,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "name": "StrAppend",
+                    "args": [
+                      {
+                        "name": "$out",
+                        "primed": false,
+                        "line": 13,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "name": "StrFormat",
+                        "args": [
+                          {
+                            "value": "\"Not Leap Year\"",
+                            "line": 20,
+                            "tokentype": "Constant"
+                          }
+                        ],
+                        "line": 20,
+                        "tokentype": "Operation"
+                      }
+                    ],
+                    "line": 20,
+                    "tokentype": "Operation"
+                  }
+                ],
+                "line": 7
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "value": "0",
+              "line": 21,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 21
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "value": "0",
+                "line": 21
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function \u0027main\u0027"
+      },
+      "types": {
+        "y": "int"
+      }
+    }
+  }
+}

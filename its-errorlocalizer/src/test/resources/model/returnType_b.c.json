@@ -1,0 +1,269 @@
+{
+  "importStatements": [
+    "#include<stdio.h>"
+  ],
+  "fncs": {
+    "add": {
+      "name": "add",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [
+        {
+          "val0": "x",
+          "val1": "int",
+          "valueArray": [
+            "x",
+            "int"
+          ],
+          "valueList": [
+            "x",
+            "int"
+          ]
+        }
+      ],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "i",
+            "val1": {
+              "value": "0",
+              "line": 11,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "i",
+              {
+                "value": "0",
+                "line": 11
+              }
+            ],
+            "valueList": [
+              "i",
+              {
+                "value": "0",
+                "line": 11
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "name": "+",
+              "args": [
+                {
+                  "name": "+",
+                  "args": [
+                    {
+                      "name": "x",
+                      "primed": false,
+                      "line": 10,
+                      "tokentype": "Variable"
+                    },
+                    {
+                      "name": "i",
+                      "primed": true,
+                      "line": 6,
+                      "tokentype": "Variable"
+                    }
+                  ],
+                  "line": 12,
+                  "tokentype": "Operation"
+                },
+                {
+                  "value": "1",
+                  "line": 12,
+                  "tokentype": "Constant"
+                }
+              ],
+              "line": 12,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "name": "+",
+                "args": [
+                  {
+                    "name": "+",
+                    "args": [
+                      {
+                        "name": "x",
+                        "primed": false,
+                        "line": 10,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "name": "i",
+                        "primed": true,
+                        "line": 6,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 12,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "value": "1",
+                    "line": 12,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 12
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "name": "+",
+                "args": [
+                  {
+                    "name": "+",
+                    "args": [
+                      {
+                        "name": "x",
+                        "primed": false,
+                        "line": 10,
+                        "tokentype": "Variable"
+                      },
+                      {
+                        "name": "i",
+                        "primed": true,
+                        "line": 6,
+                        "tokentype": "Variable"
+                      }
+                    ],
+                    "line": 12,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "value": "1",
+                    "line": 12,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 12
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'add'"
+      },
+      "types": {
+        "x": "int",
+        "i": "float"
+      }
+    },
+    "main": {
+      "name": "main",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "i",
+            "val1": {
+              "value": "1",
+              "line": 6,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "i",
+              {
+                "value": "1",
+                "line": 6
+              }
+            ],
+            "valueList": [
+              "i",
+              {
+                "value": "1",
+                "line": 6
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "name": "FuncCall",
+              "args": [
+                {
+                  "name": "add",
+                  "primed": false,
+                  "line": 7,
+                  "tokentype": "Variable"
+                },
+                {
+                  "name": "i",
+                  "primed": true,
+                  "line": 6,
+                  "tokentype": "Variable"
+                }
+              ],
+              "line": 7,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "name": "FuncCall",
+                "args": [
+                  {
+                    "name": "add",
+                    "primed": false,
+                    "line": 7,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "i",
+                    "primed": true,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 7
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "name": "FuncCall",
+                "args": [
+                  {
+                    "name": "add",
+                    "primed": false,
+                    "line": 7,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "name": "i",
+                    "primed": true,
+                    "line": 6,
+                    "tokentype": "Variable"
+                  }
+                ],
+                "line": 7
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'main'"
+      },
+      "types": {
+        "i": "int"
+      }
+    }
+  }
+}

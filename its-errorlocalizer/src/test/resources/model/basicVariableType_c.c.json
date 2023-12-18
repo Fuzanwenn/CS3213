@@ -1,0 +1,74 @@
+{
+  "importStatements": [
+    "#include<stdio.h>"
+  ],
+  "fncs": {
+    "main": {
+      "name": "main",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "i",
+            "val1": {
+              "value": "1",
+              "line": 4,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "i",
+              {
+                "value": "1",
+                "line": 4
+              }
+            ],
+            "valueList": [
+              "i",
+              {
+                "value": "1",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "name": "i",
+              "primed": true,
+              "line": 4,
+              "tokentype": "Variable"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "name": "i",
+                "primed": true,
+                "line": 4
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "name": "i",
+                "primed": true,
+                "line": 4
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function 'main'"
+      },
+      "types": {
+        "i": "int"
+      }
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "importStatements": [],
+  "fncs": {
+    "sort_list": {
+      "name": "sort_list",
+      "rettype": "*",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "list",
+            "val1": {
+              "name": "sort",
+              "args": [
+                {
+                  "name": "ListInit",
+                  "args": [
+                    {
+                      "value": "1",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "3",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "2",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "4",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "5",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "7",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "6",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "8",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "9",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    },
+                    {
+                      "value": "10",
+                      "line": 2,
+                      "tokentype": "Constant"
+                    }
+                  ],
+                  "line": 2,
+                  "tokentype": "Operation"
+                },
+                {
+                  "value": "True",
+                  "line": 3,
+                  "tokentype": "Constant"
+                }
+              ],
+              "line": 3,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "list",
+              {
+                "name": "sort",
+                "args": [
+                  {
+                    "name": "ListInit",
+                    "args": [
+                      {
+                        "value": "1",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "3",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "2",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "4",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "5",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "7",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "6",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "8",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "9",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "10",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      }
+                    ],
+                    "line": 2,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "value": "True",
+                    "line": 3,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 3
+              }
+            ],
+            "valueList": [
+              "list",
+              {
+                "name": "sort",
+                "args": [
+                  {
+                    "name": "ListInit",
+                    "args": [
+                      {
+                        "value": "1",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "3",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "2",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "4",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "5",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "7",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "6",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "8",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "9",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      },
+                      {
+                        "value": "10",
+                        "line": 2,
+                        "tokentype": "Constant"
+                      }
+                    ],
+                    "line": 2,
+                    "tokentype": "Operation"
+                  },
+                  {
+                    "value": "True",
+                    "line": 3,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 3
+              }
+            ]
+          },
+          {
+            "val0": "$ret",
+            "val1": {
+              "name": "list",
+              "primed": true,
+              "line": 4,
+              "tokentype": "Variable"
+            },
+            "valueArray": [
+              "$ret",
+              {
+                "name": "list",
+                "primed": true,
+                "line": 4
+              }
+            ],
+            "valueList": [
+              "$ret",
+              {
+                "name": "list",
+                "primed": true,
+                "line": 4
+              }
+            ]
+          }
+        ]
+      },
+      "loctrans": {
+        "1": {}
+      },
+      "locdescs": {
+        "1": "around the beginning of function 'sort_list'"
+      },
+      "types": {
+        "list": "*"
+      }
+    }
+  }
+}

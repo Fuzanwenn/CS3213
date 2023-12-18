@@ -1,0 +1,246 @@
+{
+  "importStatements": [
+    "#include\u003cstdio.h\u003e"
+  ],
+  "fncs": {
+    "main": {
+      "name": "main",
+      "rettype": "int",
+      "initloc": 1,
+      "endloc": 0,
+      "params": [],
+      "locexprs": {
+        "1": [
+          {
+            "val0": "result",
+            "val1": {
+              "value": "0",
+              "line": 4,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "result",
+              {
+                "value": "0",
+                "line": 4
+              }
+            ],
+            "valueList": [
+              "result",
+              {
+                "value": "0",
+                "line": 4
+              }
+            ]
+          },
+          {
+            "val0": "i",
+            "val1": {
+              "value": "0",
+              "line": 5,
+              "tokentype": "Constant"
+            },
+            "valueArray": [
+              "i",
+              {
+                "value": "0",
+                "line": 5
+              }
+            ],
+            "valueList": [
+              "i",
+              {
+                "value": "0",
+                "line": 5
+              }
+            ]
+          }
+        ],
+        "2": [
+          {
+            "val0": "$cond",
+            "val1": {
+              "name": "\u003c",
+              "args": [
+                {
+                  "name": "i",
+                  "primed": false,
+                  "line": 5,
+                  "tokentype": "Variable"
+                },
+                {
+                  "value": "2",
+                  "line": 5,
+                  "tokentype": "Constant"
+                }
+              ],
+              "line": 5,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "$cond",
+              {
+                "name": "\u003c",
+                "args": [
+                  {
+                    "name": "i",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "2",
+                    "line": 5,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 5
+              }
+            ],
+            "valueList": [
+              "$cond",
+              {
+                "name": "\u003c",
+                "args": [
+                  {
+                    "name": "i",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "2",
+                    "line": 5,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 5
+              }
+            ]
+          }
+        ],
+        "3": [
+          {
+            "val0": "i",
+            "val1": {
+              "name": "+",
+              "args": [
+                {
+                  "name": "i",
+                  "primed": false,
+                  "line": 5,
+                  "tokentype": "Variable"
+                },
+                {
+                  "value": "1",
+                  "line": 5,
+                  "tokentype": "Constant"
+                }
+              ],
+              "line": 5,
+              "tokentype": "Operation"
+            },
+            "valueArray": [
+              "i",
+              {
+                "name": "+",
+                "args": [
+                  {
+                    "name": "i",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "1",
+                    "line": 5,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 5
+              }
+            ],
+            "valueList": [
+              "i",
+              {
+                "name": "+",
+                "args": [
+                  {
+                    "name": "i",
+                    "primed": false,
+                    "line": 5,
+                    "tokentype": "Variable"
+                  },
+                  {
+                    "value": "1",
+                    "line": 5,
+                    "tokentype": "Constant"
+                  }
+                ],
+                "line": 5
+              }
+            ]
+          }
+        ],
+        "4": [
+          {
+            "val0": "result",
+            "val1": {
+              "name": "i",
+              "primed": false,
+              "line": 5,
+              "tokentype": "Variable"
+            },
+            "valueArray": [
+              "result",
+              {
+                "name": "i",
+                "primed": false,
+                "line": 5
+              }
+            ],
+            "valueList": [
+              "result",
+              {
+                "name": "i",
+                "primed": false,
+                "line": 5
+              }
+            ]
+          }
+        ],
+        "5": []
+      },
+      "loctrans": {
+        "1": {
+          "true": 2
+        },
+        "2": {
+          "false": 5,
+          "true": 4
+        },
+        "3": {
+          "true": 2
+        },
+        "4": {
+          "true": 3
+        },
+        "5": {}
+      },
+      "locdescs": {
+        "1": "at the beginning of the function \u0027main\u0027",
+        "2": "the condition of the \u0027for\u0027 loop at line 5",
+        "3": "update of the \u0027for\u0027 loop at line 5",
+        "4": "inside the body of the \u0027for\u0027 loop beginning at line 5",
+        "5": "*after* the \u0027for\u0027 loop starting at line 5"
+      },
+      "types": {
+        "result": "int",
+        "i": "int"
+      }
+    }
+  },
+  "meta": {},
+  "warns": {},
+  "loops": {}
+}

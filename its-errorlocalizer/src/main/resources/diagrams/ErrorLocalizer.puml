@@ -1,0 +1,273 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor UI_COLOR_T4
+skinparam classBackgroundColor UI_COLOR
+
+package legend {
+    class className {
+        + public attrribute
+        # protected attribute
+        - private attribute
+        ~ package-private attribute
+
+        + publicMethod()
+        # protectedMethod()
+        - privateMethod()
+        ~ packagePrivateMethod()
+    }
+}
+
+interface "<<interface>>\nErrorLocalizer" as ErrorLocalizer {
+    + localiseError(refProgram, subProgram, strucMap, varMap, inputs, interpreter) : ErrorLocalisation
+}
+
+package checker {
+    abstract "{abstract}\nChecker" as Checker {
+        - ResultEditor
+        - RefProgram
+        - SubProgram
+        - StructuralMapping
+        - VariableMapping
+        
+        + check(configuration)
+    }
+    
+    class ImportStatementChecker {
+        - addImportStatementMismatch(input, mismatchProgram, missingImportStatement)
+    }
+    
+    class FunctionChecker {
+        - checkSubFuncExist(input, [refFunc, subFunc])
+        - checkFuncParams(input, [refFunc, subFunc])
+        - checkFuncReturnType(input, [boolean, [refFunc, subFunc]])
+    }
+    
+    class ControlFlowGraphChecker {
+        - checkOutgoingEdges(input, [refLoc, subLoc], refFunc, subFunc])
+        - checkSubLocsExist(input, [refLoc, subLoc])
+    }
+    
+    class VariableChecker {
+        - checkSubVarExist(config, [refVar, subVar])
+    }
+    
+    class DependencyChecker {
+        - dfs(refNode, subNode, input)
+        - areNodeEquivalent(refNode, subNode)
+        - compareNode(refNode, subNode, input)
+    }
+    
+    class Configuration {
+         - Input
+         - refFunction
+         - subFunction
+         - refLoc
+         - subLoc
+         - RefVariable
+         - SubVariable
+         - RefDependencyTree
+         - SubDependencyTree
+
+         {static} + of(Input)
+         + withFunctions(ref, sub)
+         + withLocs(ref, sub)
+         + withVariables(ref, sub)
+         + withPrograms(ref, sub)
+         + getRefTree()
+         + getSubTree()
+         + get...()
+    }
+
+
+    Checker <|-- ImportStatementChecker
+    Checker <|-- FunctionChecker
+    Checker <|-- ControlFlowGraphChecker
+    Checker <|-- VariableChecker
+    Checker <|-- DependencyChecker
+    StructuralMappingUtil <.. ControlFlowGraphChecker
+    StructuralMappingUtil <.. DependencyChecker
+    Configuration <.."generates and checks" Checker
+    DependencyTree <-up- Configuration
+    DependencyTree <.. DependencyChecker
+}
+
+class ResultEditor {
+    - errorLocalisation
+    - erroneousVariablesInSubmission
+    - returnLineNumber
+    + ResultEditor()
+    + getResult()
+    + isReturnLineNumber()
+    + setReturnLineNumber(bool)
+    + addVariableValueMismatch(refNode, subNode)
+    + addUnmatchedException(refLoc, subLoc, msg)
+}
+
+class ErrorLocalizerImpl {
+    {static} + NO_INPUT
+    {static} + LOC_FUNCTION_OR_VARIABLE = -3
+    {static} + LOC_IMPORT_STATEMENT = -2
+    {static} + LOC_ROOT_NOT_FOUND = -1
+
+    - refProgram
+    - subProgram
+    - inputs
+    - StructuralMapping
+    - VariableMapping
+    - Interpreter
+    - ImportStatementChecker
+    - FunctionChecker
+    - ControlFlowGraphChecker
+    - VariableChecker
+    - DependencyChecker
+    - ResultEditor
+    - isDebugging
+
+    - initializeCheckers()
+    - runErrorLocalizer(input)
+    - printResult()
+    + withReturnLineNumber()
+    + withReturnLoc()
+}
+
+package utils {
+
+    class StructuralMappingUtil {
+        + {static} getCorrespondingRefLoc(strucMap, funcName, subLoc)
+        + {static} getCorrespondingSubLoc(strucMap, funcName, refLoc)
+        + {static} areMappedLoc(strucMap, funcName, refLoc, subLoc)
+    }
+
+    class ErrorLocationUtil {
+        + {static} areSameErrorLocation(errLocation1, errLocation2)
+    }
+
+    class FunctionUtil {
+        + {static} getVariableWithCorrectLineNumber(func, var, loc)
+        + {static} getRealLineNumber(func, var, loc)
+        + {static} getFuncExitLoc(func)
+        + {static} isFuncEntryPoint(func, loc)
+        + {static} findRelativeExpressions(func, expression, loc)
+        + {static} hasVariable(func, expression, loc)
+        + {static} findIncomingLocs(func, initLoc)
+        + {static} getVariableAssigningExpr(func, var, loc)
+    }
+
+    class ExpressionUtil {
+        + {static} symmetricOperators
+        + {static} getCalledFunc(program, operation)
+        + {static} getCalledFuncArgs(operation)
+        + {static} isFuncCall(operation)
+        + {static} areArgsOrdered(operation)
+        + {static} isCommutative(operation)
+        + {static} getSymmetricBinaryOperationName(operation)
+        + {static} getSymmetricBinaryOperation(operation)
+        + {static} isControllingVar(expression)
+        + {static} areMappedVariable(refVar, subVar, varMap, func)
+    }
+}
+
+package DependencyTree {
+    enum "<<enumeration>>\nNodeIsomerism" as NodeIsomerism {
+        CIS, TRANS
+    }
+
+    abstract class "{abstract}\nDependencyNode" as DependencyNode {
+        # controlParents
+        # dataParents
+        # child
+        # function
+        # loc
+
+        ~ DependencyNode(func, child, loc, id)
+        + getExpression()
+        + getLoc()
+        + getFunction()
+        + isVisited(node)
+        + containsParent(node)
+        + getRealLineNumber()
+        + removeParent(node)
+        + getDataParents()
+        + getControlParents()
+        + getSymmetricBinaryOperation()
+        + isCis()
+        + isTrans()
+        + getId
+        # setIsomerism(isomerism)
+        # getChild() : DependencyNode
+        # setChild(node)
+        # extendDataParentsSize()
+        # addDataParent(node)
+        # addControlParent(node)
+        # hasSameExpression(node)
+        # hasSameExpressionAndLineNumber(node)
+        # hasVisitedFunc(func) : boolean
+        # isFirstReachAtLoc(func, loc) : boolean
+    }
+
+     class ConstantNode {
+        - constant : Constant
+        + ConstantNode(func, constant, child, loc)
+     }
+
+     class OperationNode {
+        {static} + BINARY_OPS_ARG_SIZE = 2
+        - areArgsOrdered
+        - isReversible
+        - operation : Operation
+
+        + areArgsOrdered()
+        + OperationNode(func, operation, child, loc)
+     }
+
+     class VariableNode {
+        - variable : Variable
+        + VariableNode(func, variable, child, loc)
+     }
+
+    class DependencyTree {
+        ~ conditionalVariable : Variable
+        - program : Program
+        - function : Function
+        - variable : Variable
+        - root : DependencyNode
+        - nodeCount : int
+
+        + DependencyTree(Program, Function, Variable, initLoc)
+        + getRoot() : DependencyNode
+        + getVariable() : Variable
+        + getNodeCount() : int
+        + withDebugging()
+        + withoutDebugging()
+        - construct()
+        - iterateConstant(frontierNodes, currNode, var, loc)
+        - iterateOperation(frontierNodes, currNode, var, loc)
+        - iterateVariable(frontierNodes, currNode, var, loc)
+        - addChildCondNodesToFrontier(frontierNodes, currNode, loc)
+        - addParentsNode(curr, next, frontierNodes)
+        - getTreesRootedAtRet(func) : List<DependencyTree>
+    }
+
+    DependencyNode <|-down- ConstantNode
+    DependencyNode <|-down- OperationNode
+    DependencyNode *-- "*" DependencyNode
+    DependencyNode <|-down- VariableNode
+    DependencyNode <-up- "1" DependencyTree
+
+
+    ErrorLocationUtil <.left. ResultEditor
+    FunctionUtil <.. DependencyTree
+    ExpressionUtil <.. DependencyTree
+    FunctionUtil <.. DependencyNode
+    ExpressionUtil <..  DependencyNode
+
+}
+
+
+    ErrorLocalizer <|.down. ErrorLocalizerImpl
+    Checker <-left- ErrorLocalizerImpl
+    Configuration <-left- ErrorLocalizerImpl
+    ResultEditor <-right- ErrorLocalizerImpl
+
+@enduml
